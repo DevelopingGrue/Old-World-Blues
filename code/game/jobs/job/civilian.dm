@@ -222,3 +222,26 @@
 	ear = /obj/item/device/radio/headset/ia
 	hand = /obj/item/storage/briefcase
 	glasses = /obj/item/clothing/glasses/sunglasses/big
+
+// This is experimental mime code. God save you if you fuck up.
+
+/datum/job/mime
+	title = "Mime"
+	flag = MIME
+	department = "Civilian"
+	department_flag = CIVILIAN
+	faction = "Station"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the head of personnel"
+	selection_color = "#dddddd"
+	minimal_access = list(access_mime, access_theatre, access_maint_tunnels)
+
+	uniform = /obj/item/clothing/under/mime
+	pda = /obj/item/device/pda/mime
+	hat = /obj/item/clothing/head/beret
+	gloves = /obj/item/clothing/gloves/white
+	mask = /obj/item/clothing/mask/gas/mime
+	put_in_backpack = list(
+		/obj/item/weapon/pen/crayon/mime
+	)
